@@ -30,7 +30,7 @@ function App() {
 
   const product2: Product = {
     id: '2',
-    name: 'Ex Sinner | Grammy Award Winner',
+    name: 'Ex-Sinner | Grammy Award Winner',
     price: 75000,
     description: 'Price of a Met Gala Ticket. I got a bunch of em. Serious inquiries only.',   
     imageUrl: './grammy.png', 
