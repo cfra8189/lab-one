@@ -10,7 +10,7 @@ export const ProductDisplay: React.FC<ProductDisplayProps> = ({
   children
 }) => {
   return (
-    <div className="bg-white bg-opacity-70 rounded-lg shadow-md overflow-hidden">
+    <div className="bg-white/70 rounded-lg shadow-md overflow-hidden">
       <img
         src={product.imageUrl}
         alt={product.name}
@@ -36,7 +36,7 @@ export const ProductDisplay: React.FC<ProductDisplayProps> = ({
         {onAddToCart && (
           <button
             onClick={() => onAddToCart(product.id)}
-            className="mt-4 w-full bg-black-500 text-gray py-2 px-4 rounded hover:bg-black-600 transition-colors"
+            className="mt-4 bg-black text-white py-2 px-4 rounded hover:bg-gray-800 transition-colors"
           >
             Add to Cart
           </button>

@@ -1,6 +1,7 @@
 // UserProfileCard component implementation will go here
 import React from 'react';
 import type { UserProfileCardProps } from '../../types';
+import './UserProfileCard.css';
 
 export const UserProfileCard: React.FC<UserProfileCardProps> = ({
   user,
@@ -10,16 +11,16 @@ export const UserProfileCard: React.FC<UserProfileCardProps> = ({
   children
 }) => {
   return (
-    <div className="bg-white bg-opacity-70 border border-gray-200 rounded-lg shadow-md p-6">
-      <div className="flex items-center space-x-4 mb-4">
+    <div className="bg-white/70 border border-gray-200 rounded-lg shadow-md p-6">
+      <div className="flex items-center space-x-3 mb-4 header-area">
         {user.avatarUrl ? (
           <img
             src={user.avatarUrl}
             alt={`${user.name}'s avatar`}
-            className="w-16 h-16 rounded-full object-cover"
+            className="w-32 h-32 relative left-0 sm:left-[100px] md:left-[200px] lg:left-[300px] xl:left-[380px] rounded-full object-cover"
           />
         ) : (
-          <div className="w-16 h-16 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 text-2xl font-bold">
+          <div className="w-16 h-16 lg:w-24 lg:h-24 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 text-2xl lg:text-4xl font-bold">
             {user.name.charAt(0).toUpperCase()}
           </div>
         )}
@@ -42,7 +43,7 @@ export const UserProfileCard: React.FC<UserProfileCardProps> = ({
       {onEdit && (
         <button
           onClick={() => onEdit(user.id)}
-          className="w-full bg-black-500 hover:bg-black-600 text-white font-medium py-2 px-4 rounded-md transition-colors"
+          className="bg-black hover:bg-gray-800 text-white font-medium py-2 px-4 rounded-md transition-colors"
         >
           Edit Profile
         </button>
