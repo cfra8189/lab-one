@@ -23,14 +23,14 @@ function App() {
     id: '1',
     name: 'She Been Drankin\', She Been Drankin\'',
     price: 199.99,
-    description: 'Beyonce Starbucks Billion Dollar Frappuccino',   
+    description: 'Beyoncé | Starbucks Billion Dollar Frappuccino',   
     imageUrl: './beyonce-starbucks.png', 
     inStock: true
   };
 
   const product2: Product = {
     id: '2',
-    name: 'Ex Sinner, Grammy Award Winner',
+    name: 'Ex Sinner | Grammy Award Winner',
     price: 75000,
     description: 'Price of a Met Gala Ticket. I got a bunch of em. Serious inquiries only.',   
     imageUrl: './grammy.png', 
@@ -76,7 +76,7 @@ function App() {
           onEdit={(userId: string) => alert(`Editing user ${userId}`)}
         >
           <div className="text-sm text-gray-500">
-            Last login: 2 hours ago
+           Online
           </div>
         </UserProfileCard>
       </div>
