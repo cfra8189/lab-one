@@ -7,7 +7,7 @@ function App() {
         Lab 1: Component Creation & Props
       </h1>
       <p className="text-gray-600">
-        Ready to build reusable React TypeScript components!
+        
       </p>
     </div>
   );
