@@ -68,7 +68,7 @@ function App() {
         </div>
       )}
 
-      <div className="md:col-span-2 mb-6">
+      <div className="md:col-span-2 mb-6 max-w-3xl mx-auto">
         <UserProfileCard
           user={user}
           showEmail={true}

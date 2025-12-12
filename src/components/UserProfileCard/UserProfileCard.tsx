@@ -12,19 +12,19 @@ export const UserProfileCard: React.FC<UserProfileCardProps> = ({
 }) => {
   return (
     <div className="bg-white/70 border border-gray-200 rounded-lg shadow-md p-6">
-      <div className="flex items-center space-x-3 mb-4 header-area">
+      <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-4 header-area">
         {user.avatarUrl ? (
           <img
             src={user.avatarUrl}
             alt={`${user.name}'s avatar`}
-            className="w-32 h-32 relative left-0 sm:left-[100px] md:left-[200px] lg:left-[300px] xl:left-[380px] rounded-full object-cover"
+            className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full object-cover flex-shrink-0"
           />
         ) : (
-          <div className="w-16 h-16 lg:w-24 lg:h-24 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 text-2xl lg:text-4xl font-bold">
+          <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 text-3xl lg:text-4xl font-bold flex-shrink-0">
             {user.name.charAt(0).toUpperCase()}
           </div>
         )}
-        <div className="flex-1">
+        <div className="text-center sm:text-left">
           <h3 className="text-xl font-semibold text-gray-800">{user.name}</h3>
           {showEmail && (
             <p className="text-sm text-gray-600">{user.email}</p>
