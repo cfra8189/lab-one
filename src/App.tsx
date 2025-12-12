@@ -15,7 +15,7 @@ function App() {
     name: 'Sean Carter',
     email: 'jay@darock.io',
     role: 'Billionaire | Entrepreneur | Musician',
-    avatarUrl: '/jayz.png'
+    avatarUrl: './jayz.png'
   };
 
 
@@ -24,7 +24,7 @@ function App() {
     name: 'She Been Drankin\', She Been Drankin\'',
     price: 199.99,
     description: 'Beyonce Starbucks Billion Dollar Frappuccino',   
-    imageUrl: '/beyonce-starbucks.png', 
+    imageUrl: './beyonce-starbucks.png', 
     inStock: true
   };
 
@@ -33,7 +33,7 @@ function App() {
     name: 'Ex Sinner, Grammy Award Winner',
     price: 75000,
     description: 'Price of a Met Gala Ticket. I got a bunch of em. Serious inquiries only.',   
-    imageUrl: '/grammy.png', 
+    imageUrl: './grammy.png', 
     inStock: true
   };
 
@@ -47,7 +47,7 @@ function App() {
       <div 
         className="absolute inset-0 opacity-30" 
         style={{ 
-          backgroundImage: 'url(/mood.gif)', 
+          backgroundImage: 'url(./mood.gif)', 
           backgroundSize: 'repeat', 
           backgroundPosition: 'center', 
           backgroundAttachment: 'fixed',
