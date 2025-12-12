@@ -10,10 +10,10 @@ export const AlertBox: React.FC<AlertBoxProps> = ({
 }) => {
   // Define color schemes for different alert types
   const alertStyles = {
-    success: 'bg-green-100 border-green-500 text-green-700',
-    error: 'bg-red-100 border-red-500 text-red-700',
-    warning: 'bg-yellow-100 border-yellow-500 text-yellow-700',
-    info: 'bg-blue-100 border-blue-500 text-blue-700'
+    success: 'bg-white bg-opacity-70 border-green-500 text-green-700',
+    error: 'bg-white bg-opacity-70 border-red-500 text-red-700',
+    warning: 'bg-white bg-opacity-70 border-yellow-500 text-yellow-700',
+    info: 'bg-white bg-opacity-70 border-blue-500 text-blue-700'
   };
 
   return (

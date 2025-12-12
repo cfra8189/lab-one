@@ -10,7 +10,7 @@ export const UserProfileCard: React.FC<UserProfileCardProps> = ({
   children
 }) => {
   return (
-    <div className="bg-white border border-gray-200 rounded-lg shadow-md p-6">
+    <div className="bg-white bg-opacity-70 border border-gray-200 rounded-lg shadow-md p-6">
       <div className="flex items-center space-x-4 mb-4">
         {user.avatarUrl ? (
           <img
@@ -33,7 +33,7 @@ export const UserProfileCard: React.FC<UserProfileCardProps> = ({
 
       {showRole && (
         <div className="mb-4">
-          <span className="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">
+          <span className="inline-block bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded-full">
             {user.role}
           </span>
         </div>
@@ -42,7 +42,7 @@ export const UserProfileCard: React.FC<UserProfileCardProps> = ({
       {onEdit && (
         <button
           onClick={() => onEdit(user.id)}
-          className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md transition-colors"
+          className="w-full bg-black-500 hover:bg-black-600 text-white font-medium py-2 px-4 rounded-md transition-colors"
         >
           Edit Profile
         </button>

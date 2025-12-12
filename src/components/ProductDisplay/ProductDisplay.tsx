@@ -10,7 +10,7 @@ export const ProductDisplay: React.FC<ProductDisplayProps> = ({
   children
 }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="bg-white bg-opacity-70 rounded-lg shadow-md overflow-hidden">
       <img
         src={product.imageUrl}
         alt={product.name}
@@ -20,21 +20,23 @@ export const ProductDisplay: React.FC<ProductDisplayProps> = ({
         <h3 className="text-lg font-semibold text-gray-900">
           {product.name}
         </h3>
-        <p className="text-xl font-bold text-blue-600 mt-2">
+        <p className="text-xl font-bold text-gray-600 mt-2">
           ${product.price.toFixed(2)}
         </p>
         {showDescription && (
           <p className="text-gray-600 mt-2">{product.description}</p>
         )}
         {showStockStatus && (
-          <p className="mt-2 text-green-600">
+          <p className="mt-2 text-green-800">
             {product.inStock ? 'In Stock' : 'Out of Stock'}
           </p>
+          
         )}
+        <p className='text-gray-800'>YOU WANT IT, WE GOT IT</p>
         {onAddToCart && (
           <button
             onClick={() => onAddToCart(product.id)}
-            className="mt-4 w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors"
+            className="mt-4 w-full bg-black-500 text-gray py-2 px-4 rounded hover:bg-black-600 transition-colors"
           >
             Add to Cart
           </button>
